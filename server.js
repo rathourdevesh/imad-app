@@ -24,11 +24,11 @@ var htmlTemplate=`<html>
          <title>
          ${title}
         </title>
-        <link href="/ui/style.css" rel="stylesheet" />
+  
     </head>
 
     <body>
-        <div class= "content">
+        <div>
         <div>
             <a href="/"> Home</a>
         
