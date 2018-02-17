@@ -9,7 +9,7 @@ var articleOne{
     title='article one';
     heading='This is The fist Article';
     date='Feb 18 2018';
-    body=`  <p>
+    content=`  <p>
             I am Creating mt first web app this is the first web app created by me.
             I am Creating mt first web app this is the first web app created by me.I am Creating mt first web app this is the first web app created by me.
             </p>`;
@@ -18,7 +18,7 @@ function createTemplate(data){
 var title= data.title;
 var heading= data.heading;
 var date= data.date;
-var body=data.body;
+var content=data.content;
 var htmlTemplate=`<html>
     <head>
          <title>
@@ -28,7 +28,7 @@ var htmlTemplate=`<html>
     </head>
 
     <body>
-        <div>
+        
         <div>
             <a href="/"> Home</a>
         
@@ -41,9 +41,9 @@ var htmlTemplate=`<html>
           ${date}
         </div>
          <div>
-         ${body}
+         ${content}
         </div>
-    </div>
+    
         
     </body>
 </html>
