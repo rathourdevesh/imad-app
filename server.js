@@ -5,15 +5,15 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne{
-    title='article one';
-    heading='This is The fist Article';
-    date='Feb 18 2018';
-    content=`  <p>
+var articleOne = {
+    title:'article one',
+    heading:'This is The fist Article',
+    date: 'Feb 18 2018',
+    content:`  <p>
             I am Creating mt first web app this is the first web app created by me.
             I am Creating mt first web app this is the first web app created by me.I am Creating mt first web app this is the first web app created by me.
-            </p>`;
-}
+            </p>`
+};
 function createTemplate(data){
 var title= data.title;
 var heading= data.heading;
