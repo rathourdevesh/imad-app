@@ -1,6 +1,6 @@
 var button = document.getElementById('button');
 
-button.onclick =function() {
+button.onclick = function() {
     
     //create a request
     var request = new XMLHttpRequest();
