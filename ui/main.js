@@ -47,5 +47,5 @@ submit.onclick =function() {
 var name = nameInput.value;
     //render the variable in correct span
   request.open('GET','http://rathourdevesh97.imad.hasura-app.io/submit-name?=name'+name,true);
-  request.send(name);
+  request.send(null);
 };
