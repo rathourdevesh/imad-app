@@ -1,19 +1,11 @@
-console.log('Loaded!');
-
-// changing value
-var element= document.getElementById('main_text');
-element.innerHTML = 'New Value';
-
-// move the image
-var marginLeft=0;
-function moveRight() {
-    marginLeft=marginLeft+10;
-    img.style.marginLeft = marginLeft+ 'px';
-}
-
-
-var img= document.getElementById('madi');
-img.onclick = function() {
-    var interval= setInterval(moveRight,100);
+var button = document.getElementById('button');
+var counter=0;
+button.onclick =function() ={
     
+    
+    
+    //render the variable in correct span
+    counter=counter+1;
+    var span  = document.getElementById('count');
+    span.innerHTML = counter.toString();
 }
