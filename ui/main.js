@@ -5,6 +5,8 @@ var submit = document.getElementById('submit_btn');
 submit.onclick =function() {
     
         var request = new XMLHttpRequest();
+         var nameInput = document.getElementById('name');
+var name = nameInput.value;
     
     request.onreadystatechange = function() {
         if (request.readyState === XMLHttpRequest.DONE) {
@@ -22,8 +24,7 @@ submit.onclick =function() {
         
     };
     
-    var nameInput = document.getElementById('name');
-var name = nameInput.value;
+   
     //render the variable in correct span
   request.open('GET','http://rathourdevesh97.imad.hasura-app.io/submit-name?=name'+name,true);
   request.send(null);
